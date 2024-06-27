@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<h1 id="title">Best Console</h1>
+<p id="description">Explore gaming experience with our survey! Give us insight which is your favorite console and gaming experience.</p>
+<form id="survey-form">
+    <label for="name" type="text">Name</label><br>
+    <input type="text" id="Name" placeholder="Name" name="Name" required/><br>
+    <label for="email-label">Email</label><br>
+    <input  id="email" placeholder="Email" type="email" required/><br>
+    <label for="number-label">Age</label><br>
+    <input id="number" min="13" max="120" placeholder="Age" type="number"/>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Which console did you purchase?</legend>
+            <div>
+                <select name="" id="dropdown" >
+                    <option>Playstation</option>
+                    <option>Xbox</option>
+                    <option>Nitendo</option>
+                </select>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Which do you prefer?</legend>
+            <label for="Playstation" >Playstation</label>
+            <input type="radio" id="Playstation" name="drone" value="Playstation" checked type="radio" readonly required/>
+            <label for="Xbox">Xbox</label>
+            <input type="radio" id="Xbox" name="drone" value="Xbox" checked type="radio" readonly required/>
+            <label for="Nitendo">Nitendo</label>
+            <input type="radio" id="Nitendo" name="drone" value="Nitendo" checked type="radio" readonly required/>
+    </fieldset>
+    <fieldset>
+        <legend >How did you come across our survey?</legend>
+            <div>
+                <input type="checkbox" id="twitter" name="twitter" required value="checkbox" />
+                <label for="twitter">Twitter</label>
+            </div>
+            <div>
+                <input type="checkbox" id="facebook" name="facebook" required value="checkbox"/>
+                <label for="facebook">Facebook</label>
+            </div>
+            <div>
+                <input type="checkbox" id="others" name="others" required value="checkbox"/>
+                <label for="others">Others</label>
+            </div>
+    </fieldset>
+    <textarea name="textarea" rows="5" cols="50">Write something here</textarea>
+    <br>
+    <input type="submit" id="submit" value="Submit Survey" />
+</form>
+</body>
+</html>
